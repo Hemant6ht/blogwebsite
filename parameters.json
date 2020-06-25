@@ -1,0 +1,14 @@
+{
+  "params":{
+  	"sitename":"Tech Gyani",
+  	"local_uri":"mysql+pymysql://root:@localhost/techgyani",
+  	"prod_uri":"",
+  	"tagline":"Technology ki gyan bhari batein",
+  	"fb":"https://facebook.com/hemant-kumar-yadav",
+  	"twit":"https://twiter.com",
+  	"git":"https://git.com",
+  	"username":"admin",
+  	"password":"helloflask"
+  }
+
+}

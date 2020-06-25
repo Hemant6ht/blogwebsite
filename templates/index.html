@@ -1,0 +1,50 @@
+
+  {% extends "layout.html" %}
+  {% block body %}
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url(' {{ url_for('static',filename='img/home-bg.jpg') }} ')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>{{param['sitename']}}</h1>
+            <span class="subheading">{{param['tagline']}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+      	<!--Generate the Post here-->
+        {% for item in posts: %}
+       		<div class="post-preview">
+          		<a href="/post/{{item['slug']}}">
+            		<h2 class="post-title">
+              			{{item['title']}}
+            		</h2>
+            		<h3 class="post-subtitle">
+              			{{item['contents'][0:50]}}...
+            		</h3>
+          		</a>
+          		<p class="post-meta">Posted by
+            		<a href="#">{{item['author']}}</a>
+            		{{item['date']}}
+                </p>
+            </div>
+        	<hr>
+        {% endfor %}
+
+        <!-- Pager -->
+        <div class="clearfix">
+          <a class="btn btn-primary float-right" href="#">Older posts &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+  }

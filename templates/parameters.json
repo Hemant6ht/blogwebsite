@@ -1,0 +1,7 @@
+{
+  "params":{
+  	"sitename":"The gyani",
+  	"local_uri":"mysql+pymysql://root:@localhost/techgyani"
+  }
+
+}
