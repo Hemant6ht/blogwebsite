@@ -27,7 +27,7 @@
   <div class="logo"><b><font color="white">Edit the blog</font></b></div>
   <!-- Main Form -->
   <div class="login-form-1">
-    <form id="login-form" class="text-left" action="/edit/{{post.sno}}" method="post">
+    <form id="login-form" class="text-left" enctype="multipart/form-data" action="/edit/{{post.sno}}" method="post">
       <div class="main-login-form" style=" width: 40vw">
         <div class="login-group">
           <div class="form-group">
@@ -49,7 +49,7 @@
           </div>
           <div class="form-group">
             <label for="lg_password" class="">Imgfile</label>
-            <input type="text" class="form-control" id="lg_password" name="imgfile" placeholder="Imgfile" value="{{post.imgfile}}">
+            <input type="file" class="form-control" id="lg_password" name="imgfile" placeholder="Imgfile">
           </div>
         </div>
         <button type="submit" class="login-button"><b><font color="green">Edit</font></b></button>

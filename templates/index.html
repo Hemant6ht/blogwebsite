@@ -2,7 +2,7 @@
   {% extends "layout.html" %}
   {% block body %}
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url(' {{ url_for('static',filename='img/home-bg.jpg') }} ')">
+  <header class="masthead" style="background-image: url(' {{ url_for('static',filename='img/home-bg.jpg') }}' )">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -41,10 +41,10 @@
 
         <!-- Pager -->
         <div class="clearfix">
-          <a class="btn btn-primary float-right" href="#">Older posts &rarr;</a>
+          <a class="btn btn-primary float-left" href="{{ prev }}">&larr; Newer posts </a>
+          <a class="btn btn-primary float-right" href="{{ nxt }}">Older posts &rarr;</a>
         </div>
       </div>
     </div>
   </div>
 {% endblock %}
-  }

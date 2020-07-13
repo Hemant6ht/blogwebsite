@@ -1,6 +1,6 @@
 {
   "params":{
-  	"sitename":"Tech Gyani",
+  	"sitename":"T-Tech",
   	"local_uri":"mysql+pymysql://root:@localhost/techgyani",
   	"prod_uri":"",
   	"tagline":"Technology ki gyan bhari batein",
@@ -8,7 +8,8 @@
   	"twit":"https://twiter.com",
   	"git":"https://git.com",
   	"username":"admin",
-  	"password":"helloflask"
+  	"password":"helloflask",
+	"ppr":4
   }
 
 }
